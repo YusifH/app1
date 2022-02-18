@@ -13,9 +13,10 @@ CustomAppBar(this.course);
           Column(
             children: [
               Container(
+                width: MediaQuery.of(context).size.width,
                 height: 300,
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(35),
+                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(35), bottomRight: Radius.circular(35)),
                   child: Image.asset(course.imageurl, fit: BoxFit.fitHeight,),
                 ),
               ),

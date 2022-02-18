@@ -1,6 +1,8 @@
 import 'package:app1/constants/color.dart';
 import 'package:app1/models/course.dart';
+import 'package:app1/screens/detail/widget/course_plan.dart';
 import 'package:app1/screens/detail/widget/custom_appbar.dart';
+import 'package:app1/screens/detail/widget/describtion.dart';
 import 'package:flutter/material.dart';
 
 class DetailPage extends StatelessWidget {
@@ -14,7 +16,9 @@ class DetailPage extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            CustomAppBar(course)
+            CustomAppBar(course),
+            CourseDescribtion(course),
+            CoursePlan(course)
           ],
         ),
       ),
